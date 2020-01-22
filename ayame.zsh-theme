@@ -22,24 +22,15 @@ __ayame_status() {
 	echo "%(0?.${COLOR_TRUE}.${COLOR_FALSE})${PROMPT_CHAR}${COLOR_OFF}"
 }
 
-prompt-enable() {
-PROMPT='
-$(__ayame_status) '
-RPROMPT='$(__ayame_path)'
-}
-
-prompt-disable() {
-PROMPT=
-RPROMPT=
-}
-
 main() {
 	# Allow for functions in the prompt.
 	setopt PROMPT_SUBST
 	# Hide old prompt
 	setopt TRANSIENT_RPROMPT
 
-	prompt-enable
+PROMPT='
+$(__ayame_status) '
+RPROMPT='$(__ayame_path)'
 }
 main
 # vim:ft=zsh:
