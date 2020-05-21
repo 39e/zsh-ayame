@@ -2,6 +2,8 @@ Ayame
 ===
 Ayame is アヤメ(en: Iris sanguinea)
 
+![](screenshot.png)
+
 ## License
 Copyright (c) 2020 [Ress](https://ress.mit-license.org/2020)
 
