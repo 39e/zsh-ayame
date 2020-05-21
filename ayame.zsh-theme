@@ -1,4 +1,6 @@
 #!/usr/bin/env zsh
+# vim:ft=zsh:
+
 autoload -U colors && colors
 COLOR_OFF="%{$reset_color%}"
 
@@ -32,5 +34,5 @@ PROMPT='
 $(__ayame_status) '
 RPROMPT='$(__ayame_path)'
 }
+
 main
-# vim:ft=zsh:
